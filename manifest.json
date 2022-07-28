@@ -1,0 +1,33 @@
+{
+    "name": "Sol to Fiat",
+    "description": "Simple extension to convert Sol to Fiat for Magiceden",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "src/js/background.js"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "src/html/popup.html",
+        "default_icon": {
+            "16": "src/images/icons8-coins-16.png",
+            "32": "src/images/icons8-coins-32.png",
+            "48": "src/images/icons8-coins-48.png",
+            "64": "src/images/icons8-coins-64.png"
+        }
+    },
+    "icons": {
+        "16": "src/images/icons8-coins-16.png",
+        "32": "src/images/icons8-coins-32.png",
+        "48": "src/images/icons8-coins-48.png",
+        "64": "src/images/icons8-coins-64.png"
+    },
+    "host_permissions": [
+        "https://*.magiceden.io/item-details/*"
+    ]
+}
