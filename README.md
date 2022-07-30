@@ -45,9 +45,9 @@ Your MagicEden item detail page should look like this.
 # 🚗&nbsp; Roadmap
 
 - [x] Convert Sol price to USD for MagicEden
-- [] Add different currency
-- [] Create one for other marketplace e.g. Hyperspace, CoralCube
-- [] Any suggestion?
+- [ ] Add different currency
+- [ ] Create one for other marketplace e.g. Hyperspace, CoralCube
+- [ ] Any suggestion?
 
 <br/>
 
