@@ -60,15 +60,3 @@ waitForElm(".text-white.price").then((elm) => {
 		insertPriceElemToME(elm, solPrice);
 	});
 });
-
-// chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-// 	let div = document.getElementById("fiatElm");
-
-// 	if (!request.contentCheckedBool) {
-// 		div.style.display = "none";
-// 		sendResponse("Converter is turned off");
-// 	} else {
-// 		div.style.display = "block";
-// 		sendResponse("Converter is turned on");
-// 	}
-// });

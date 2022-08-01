@@ -76,12 +76,6 @@ chrome.runtime.onInstalled.addListener(function () {
 	console.log("Extension Installed...");
 	storeSolPriceFromApi();
 	chrome.storage.sync.set({ isOn: true });
-	// getCurrentTab().then((tab) => {
-	// 	const isME = tab.url.includes("https://magiceden.io/item-details");
-	// 	if (isME) {
-	// 		injectScriptToCurrentTab(tab.id);
-	// 	}
-	// });
 });
 
 //update when user refresh the current tab
@@ -97,23 +91,5 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 		}
 	});
 });
-
-//trigger when notified by popup
-// chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-// 	if (request.bkgCheckedBool === true) {
-// 		getCurrentTab().then((tab) => {
-// 			const isME = tab.url.includes("https://magiceden.io/item-details");
-// 			if (isME) {
-// 				checkLastUpdateTime();
-
-// 				injectScriptToCurrentTab(tab.id);
-// 			}
-// 		});
-
-// 		sendResponse("Switch on");
-// 	} else {
-// 		sendResponse("Switch off");
-// 	}
-// });
 
 //main

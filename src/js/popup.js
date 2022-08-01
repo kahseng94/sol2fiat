@@ -19,27 +19,4 @@ element.addEventListener("change", function () {
 			console.log(`isChecked=${isChecked} saved in storage`);
 		}
 	});
-
-	//send msg to notify bkg when switch is changed
-	// chrome.runtime.sendMessage(
-	// 	{ bkgCheckedBool: isChecked },
-	// 	function (response) {
-	// 		console.log(response);
-	// 	}
-	// );
-
-	// //send msg to notify content when switch is changed
-	// chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-	// 	chrome.tabs.sendMessage(
-	// 		tabs[0].id,
-	// 		{ contentCheckedBool: isChecked },
-	// 		function (response) {
-	// 			if (chrome.runtime.lastError) {
-	// 				console.error("From popup: ", chrome.runtime.lastError.message);
-	// 			} else {
-	// 				console.log(response);
-	// 			}
-	// 		}
-	// 	);
-	// });
 });
