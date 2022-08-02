@@ -45,6 +45,7 @@ function checkLastUpdateTime() {
 	chrome.storage.sync.get(["lastUpdatedTime"], (result) => {
 		if (chrome.runtime.lastError) {
 			console.error(chrome.runtime.lastError.message);
+			return;
 		} else {
 			const storedJSONDate = result["lastUpdatedTime"];
 
@@ -81,6 +82,10 @@ chrome.runtime.onInstalled.addListener(function () {
 //update when user refresh the current tab
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 	chrome.storage.sync.get(["isOn"]).then((value) => {
+		if (chrome.runtime.lastError) {
+			console.log(chrome.runtime.lastError.message);
+			return;
+		}
 		if (value.isOn) {
 			const isME = tab.url.includes("https://magiceden.io/item-details");
 			if (changeInfo.status == "complete" && isME) {

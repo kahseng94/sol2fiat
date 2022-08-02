@@ -21,6 +21,10 @@ function waitForElm(selector) {
 //get sol price from sync storage and return Promise
 function getSolPriceFromStorage() {
 	const solUSD = chrome.storage.sync.get(["solUSD"]).then((value) => {
+		if (chrome.runtime.lastError) {
+			console.log(chrome.runtime.lastError.message);
+			return;
+		}
 		return value.solUSD;
 	});
 

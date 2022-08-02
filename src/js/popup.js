@@ -1,4 +1,8 @@
 chrome.storage.sync.get("isOn", function (value) {
+	if (chrome.runtime.lastError) {
+		console.log(chrome.runtime.lastError.message);
+		return;
+	}
 	let element = document.getElementById("togglebutton");
 	if (value.isOn) {
 		element.setAttribute("checked", "");

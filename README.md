@@ -63,7 +63,7 @@ Everyone is welcome to contribute.
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
 
-You can always **reach out to me directly** via the [twitter](https://twitter.com/jayson94) or submit an issue on github.
+You can always **reach out to me directly** via my [twitter](https://twitter.com/kahseng94).
 
 ## 🤝&nbsp; Found a bug? Missing a specific feature?
 
