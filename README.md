@@ -51,7 +51,9 @@ Your MagicEden item detail page should look like this.
 
 <br/>
 
-# 🏢&nbsp; System Design
+# 🏢&nbsp; Software Architecture
+
+![system-design-img](src/images/sol2fiatSD.png)
 
 <br/>
 
